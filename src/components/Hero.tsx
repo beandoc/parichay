@@ -47,7 +47,7 @@ const Hero = () => {
                             }}
                             className="font-bold font-heading tracking-tight leading-[1.1]"
                         >
-                            <span className="block text-5xl md:text-7xl bg-clip-text text-transparent bg-gradient-to-r from-[#c5a059] via-[#e6c985] to-[#c5a059] pb-2 drop-shadow-sm">
+                            <span className="block text-4xl sm:text-5xl md:text-7xl bg-clip-text text-transparent bg-gradient-to-r from-[#c5a059] via-[#e6c985] to-[#c5a059] pb-2 drop-shadow-sm leading-tight">
                                 {Array.from("Resilience, Strength").map((char, index) => (
                                     <motion.span
                                         key={index}
@@ -60,7 +60,7 @@ const Hero = () => {
                                     </motion.span>
                                 ))}
                             </span>
-                            <span className="block text-4xl md:text-6xl text-gray-100 tracking-tight mt-1">
+                            <span className="block text-3xl sm:text-4xl md:text-6xl text-gray-100 tracking-tight mt-2">
                                 {Array.from("& Spirits").map((char, index) => (
                                     <motion.span
                                         key={index}
@@ -81,7 +81,7 @@ const Hero = () => {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ duration: 1, delay: 0.8 }}
-                        className="text-xl md:text-2xl text-gray-400 font-light mb-8 tracking-wide max-w-lg"
+                        className="text-lg sm:text-xl md:text-2xl text-gray-400 font-light mb-8 tracking-wide max-w-lg mx-auto lg:mx-0"
                     >
                         Redefining Military Culture
                     </motion.h2>
@@ -91,7 +91,7 @@ const Hero = () => {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ duration: 1.2, delay: 1 }}
-                        className="mb-10 text-lg font-serif italic text-[#c5a059]/90 border-l-2 border-[#c5a059]/50 pl-4"
+                        className="mb-10 text-base sm:text-lg font-serif italic text-[#c5a059]/90 border-l-2 border-[#c5a059]/50 pl-4 inline-block lg:block"
                     >
                         "Sankalp": Swasthya, Sahas, Aur Samman
                     </motion.div>
