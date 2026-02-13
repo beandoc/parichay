@@ -115,6 +115,18 @@ const Hero = () => {
                             Venue
                         </button>
                     </motion.div>
+
+                    {/* Scientific Programme Placeholder */}
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ duration: 0.8, delay: 1.4 }}
+                        className="mt-6"
+                    >
+                        <button className="text-[#c5a059] hover:text-white underline underline-offset-4 decoration-[#c5a059]/50 hover:decoration-white transition-all text-sm uppercase tracking-widest font-semibold flex items-center gap-2">
+                            Scientific Programme (Coming Soon)
+                        </button>
+                    </motion.div>
                 </div>
 
                 {/* Right Content - Floating 3D Logo */}
