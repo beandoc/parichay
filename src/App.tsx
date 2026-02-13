@@ -1,4 +1,5 @@
 
+import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
 import ProgramHighlights from './components/ProgramHighlights';
@@ -10,6 +11,7 @@ import Logistics from './components/Logistics';
 function App() {
   return (
     <div className="bg-[#f8fafc] text-[#0f172a]">
+      <Navbar />
       <Hero />
       <About />
       <ProgramHighlights />

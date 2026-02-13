@@ -17,7 +17,7 @@ const Hero = () => {
             <div className="z-10 w-full max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center relative">
 
                 {/* Left Content */}
-                <div className="flex flex-col items-center lg:items-start text-center lg:text-left order-2 lg:order-1">
+                <div className="flex flex-col items-start text-left order-2 lg:order-1 w-full pt-20 lg:pt-0">
 
                     {/* Glass Badge */}
                     <motion.div
@@ -31,7 +31,7 @@ const Hero = () => {
                     </motion.div>
 
                     {/* Main Heading with Typewriter Effect */}
-                    <div className="mb-6 relative z-10 text-center lg:text-left">
+                    <div className="mb-6 relative z-10 text-left">
                         <motion.h1
                             initial="hidden"
                             whileInView="visible"
@@ -47,7 +47,7 @@ const Hero = () => {
                             }}
                             className="font-bold font-heading tracking-tight leading-[1.1]"
                         >
-                            <span className="block text-4xl sm:text-5xl md:text-7xl bg-clip-text text-transparent bg-gradient-to-r from-[#c5a059] via-[#e6c985] to-[#c5a059] pb-2 drop-shadow-sm leading-tight">
+                            <span className="block text-5xl sm:text-6xl md:text-7xl bg-clip-text text-transparent bg-gradient-to-r from-[#c5a059] via-[#e6c985] to-[#c5a059] pb-2 drop-shadow-sm leading-[1.1] sm:leading-[1.1]">
                                 {Array.from("Resilience, Strength").map((char, index) => (
                                     <motion.span
                                         key={index}
@@ -60,7 +60,7 @@ const Hero = () => {
                                     </motion.span>
                                 ))}
                             </span>
-                            <span className="block text-3xl sm:text-4xl md:text-6xl text-gray-100 tracking-tight mt-2">
+                            <span className="block text-4xl sm:text-5xl md:text-6xl text-gray-100 tracking-tight mt-1 sm:mt-2">
                                 {Array.from("& Spirits").map((char, index) => (
                                     <motion.span
                                         key={index}
@@ -81,7 +81,7 @@ const Hero = () => {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ duration: 1, delay: 0.8 }}
-                        className="text-lg sm:text-xl md:text-2xl text-gray-400 font-light mb-8 tracking-wide max-w-lg mx-auto lg:mx-0"
+                        className="text-xl md:text-2xl text-gray-400 font-light mb-8 tracking-wide max-w-lg"
                     >
                         Redefining Military Culture
                     </motion.h2>
@@ -91,7 +91,7 @@ const Hero = () => {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ duration: 1.2, delay: 1 }}
-                        className="mb-10 text-base sm:text-lg font-serif italic text-[#c5a059]/90 border-l-2 border-[#c5a059]/50 pl-4 inline-block lg:block"
+                        className="mb-10 text-base sm:text-lg font-serif italic text-[#c5a059]/90 border-l-2 border-[#c5a059]/50 pl-4 block"
                     >
                         "Sankalp": Swasthya, Sahas, Aur Samman
                     </motion.div>
@@ -129,8 +129,8 @@ const Hero = () => {
                     </motion.div>
                 </div>
 
-                {/* Right Content - Floating 3D Logo */}
-                <div className="flex justify-center items-center order-1 lg:order-2 w-full mb-8 lg:mb-0">
+                {/* Right Content - Floating 3D Logo (Hidden on Mobile) */}
+                <div className="hidden lg:flex justify-center items-center order-1 lg:order-2 w-full mb-8 lg:mb-0">
                     <motion.div
                         initial={{ opacity: 0, scale: 0.8, rotate: -5 }}
                         animate={{ opacity: 1, scale: 1, rotate: 0 }}
