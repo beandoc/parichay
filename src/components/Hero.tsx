@@ -101,17 +101,17 @@ const Hero = () => {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, delay: 1.2 }}
-                        className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto"
+                        className="flex flex-col sm:flex-row gap-5 w-full sm:w-auto"
                     >
-                        <button className="group relative px-8 py-4 bg-[#c5a059] hover:bg-[#d4af63] text-[#0f172a] font-bold rounded-xl transition-all shadow-[0_4px_20px_rgba(197,160,89,0.25)] hover:shadow-[0_8px_30px_rgba(197,160,89,0.4)] hover:-translate-y-1 overflow-hidden">
-                            <span className="relative z-10 flex items-center justify-center gap-2">
-                                <ShieldCheck size={20} strokeWidth={2.5} />
+                        <button className="group relative w-full sm:w-auto px-10 py-5 bg-[#c5a059] hover:bg-[#d4af63] text-[#0f172a] font-bold rounded-xl transition-all shadow-[0_4px_20px_rgba(197,160,89,0.3)] hover:shadow-[0_8px_30px_rgba(197,160,89,0.5)] hover:-translate-y-1 overflow-hidden">
+                            <span className="relative z-10 flex items-center justify-center gap-3">
+                                <ShieldCheck size={24} strokeWidth={2.5} />
                                 Register Now
                             </span>
                         </button>
 
-                        <button className="group px-8 py-4 glass-panel-dark hover:bg-white/5 text-white font-medium rounded-xl transition-all flex items-center justify-center gap-2 hover:-translate-y-1 hover:border-white/30">
-                            <MapPin size={20} className="text-[#c5a059]" />
+                        <button className="group w-full sm:w-auto px-10 py-5 glass-panel-dark hover:bg-white/10 text-white font-medium rounded-xl transition-all flex items-center justify-center gap-3 hover:-translate-y-1 border border-white/10 hover:border-[#c5a059]/50">
+                            <MapPin size={24} className="text-[#c5a059]" />
                             Venue
                         </button>
                     </motion.div>
@@ -130,27 +130,27 @@ const Hero = () => {
                 </div>
 
                 {/* Right Content - Floating 3D Logo */}
-                <div className="flex justify-center items-center order-1 lg:order-2">
+                <div className="flex justify-center items-center order-1 lg:order-2 w-full mb-8 lg:mb-0">
                     <motion.div
                         initial={{ opacity: 0, scale: 0.8, rotate: -5 }}
                         animate={{ opacity: 1, scale: 1, rotate: 0 }}
                         transition={{ duration: 1.5, type: "spring", bounce: 0.4 }}
-                        className="relative group"
+                        className="relative group w-full flex justify-center"
                     >
-                        {/* Glowing Backdrops */}
-                        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] bg-[#c5a059] blur-[100px] opacity-20 rounded-full animate-pulse-slow"></div>
-                        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[250px] h-[250px] bg-[#1a2c42] blur-[80px] opacity-40 rounded-full mix-blend-multiply"></div>
+                        {/* Glowing Backdrops - Optimized for Mobile */}
+                        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[90%] md:w-[300px] aspect-square bg-[#c5a059] blur-[80px] opacity-25 rounded-full animate-pulse-slow"></div>
+                        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] md:w-[250px] aspect-square bg-[#1a2c42] blur-[80px] opacity-40 rounded-full mix-blend-multiply"></div>
 
-                        {/* Glass Container for Logo */}
-                        <div className="relative glass-panel-dark p-12 rounded-[2rem] border border-white/10 shadow-2xl backdrop-blur-xl bg-white/5 transform transition-transform duration-700 hover:scale-105 hover:rotate-1">
+                        {/* Glass Container for Logo - Optimized Padding for Mobile */}
+                        <div className="relative glass-panel-dark p-8 md:p-12 rounded-[2rem] border border-white/10 shadow-2xl backdrop-blur-xl bg-white/5 transform transition-transform duration-700 hover:scale-105 hover:rotate-1 max-w-[90%] sm:max-w-none">
                             <img
                                 src="/logo.jpg"
                                 alt="Conference Logo"
-                                className="w-64 h-64 md:w-80 md:h-80 object-contain drop-shadow-2xl"
+                                className="w-full h-auto xs:w-64 md:w-80 object-contain drop-shadow-2xl"
                             />
                             {/* Decorative Corner Accents */}
-                            <div className="absolute top-6 left-6 w-8 h-8 border-t-2 border-l-2 border-[#c5a059]/30 rounded-tl-lg"></div>
-                            <div className="absolute bottom-6 right-6 w-8 h-8 border-b-2 border-r-2 border-[#c5a059]/30 rounded-br-lg"></div>
+                            <div className="absolute top-6 left-6 w-6 h-6 md:w-8 md:h-8 border-t-2 border-l-2 border-[#c5a059]/50 rounded-tl-lg"></div>
+                            <div className="absolute bottom-6 right-6 w-6 h-6 md:w-8 md:h-8 border-b-2 border-r-2 border-[#c5a059]/50 rounded-br-lg"></div>
                         </div>
                     </motion.div>
                 </div>
