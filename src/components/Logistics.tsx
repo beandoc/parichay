@@ -1,8 +1,8 @@
-import React from 'react';
+
 import { MapPin, Calendar, CreditCard, Landmark, ArrowUp } from 'lucide-react';
 import { motion } from 'framer-motion';
 
-const Logistics: React.FC = () => {
+const Logistics = () => {
     return (
         <footer className="bg-[#0f1926] text-white pt-24 pb-12 relative overflow-hidden border-t border-white/5">
             {/* Background Effects */}

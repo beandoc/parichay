@@ -1,8 +1,8 @@
-import React from 'react';
+
 import { motion } from 'framer-motion';
 import { ShieldCheck, MapPin, ChevronRight, Play } from 'lucide-react';
 
-const Hero: React.FC = () => {
+const Hero = () => {
     return (
         <section className="relative w-full min-h-screen bg-[#0f1926] text-white flex flex-col justify-center items-center overflow-hidden py-20 px-4">
             {/* Dynamic Background */}

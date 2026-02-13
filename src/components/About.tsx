@@ -1,8 +1,8 @@
-import React from 'react';
+
 import { motion } from 'framer-motion';
 import { AlertTriangle, LightbulbIcon, Compass } from 'lucide-react';
 
-const About: React.FC = () => {
+const About = () => {
     return (
         <section className="bg-[#f8fafc] text-[#0f172a] py-28 relative overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-tr from-[#f8fafc] via-[#f1f5f9] to-[#c5a059]/5 opacity-[0.4] pointer-events-none"></div>

@@ -1,8 +1,8 @@
-import React from 'react';
+
 import { motion } from 'framer-motion';
 import { ShieldAlert, TrendingUp, Users, Brain } from 'lucide-react';
 
-const WhyAttend: React.FC = () => {
+const WhyAttend = () => {
     const points = [
         {
             title: "Suicide Prevention",

@@ -1,8 +1,8 @@
-import React from 'react';
+
 import { motion } from 'framer-motion';
 import { Check, Users2 } from 'lucide-react';
 
-const TargetAudience: React.FC = () => {
+const TargetAudience = () => {
     return (
         <section className="py-24 bg-[#e2e8f0] relative overflow-hidden">
             {/* Background shape */}

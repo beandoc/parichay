@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Plus, Minus, HelpCircle } from 'lucide-react';
 
-const FAQItem: React.FC<{ question: string; answer: string, isOpen: boolean, onClick: () => void }> = ({ question, answer, isOpen, onClick }) => {
+const FAQItem = ({ question, answer, isOpen, onClick }: { question: string; answer: string, isOpen: boolean, onClick: () => void }) => {
     return (
         <motion.div
             initial={{ opacity: 0 }}
@@ -41,7 +41,7 @@ const FAQItem: React.FC<{ question: string; answer: string, isOpen: boolean, onC
     );
 };
 
-const FAQ: React.FC = () => {
+const FAQ = () => {
     const [openIndex, setOpenIndex] = useState<number | null>(0);
 
     const faqs = [
